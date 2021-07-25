@@ -25,11 +25,13 @@ function drawLineCharts(course, grades) {
                 fill: false,
               }]
         }});
+
+    console.log(course.shortname, chart);
 }
 
 const parseGrades = (grades) =>
     grades.tabledata.map(g => {
-        if (g.grade !== undefined && isNaN(g.grade.content)) {
+        if (g.grade !== undefined && !isNaN(g.grade.content)) {
             const grade = parseFloat(g.grade.content);
             const max = parseFloat(g.range.content.split(/;/g)[1]);
             return { grade, max };
