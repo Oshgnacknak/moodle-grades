@@ -2,6 +2,8 @@
 
 Fetch Moodle grades from your server and display them as line charts
 
+![](demo.png)
+
 ## Quick Start
 
 1. Grab your token from your Moodle page.
