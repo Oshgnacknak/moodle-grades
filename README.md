@@ -7,7 +7,7 @@ Fetch Moodle grades from your server and display them as line charts
 ## Quick Start
 
 1. Grab your token from your Moodle page.
-It can be fond under "Dashboard" > "Preferences" > "User account" > "Security keys".
+It can be found under "Dashboard" > "Preferences" > "User account" > "Security keys".
 The one you are looking for is "Moodle mobile web service".
 Place that and your universities domain in `.env`.
 
