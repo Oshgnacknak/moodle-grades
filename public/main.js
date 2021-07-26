@@ -15,13 +15,19 @@ function drawLineCharts(course, grades) {
                 data: grades.map(g => g && g.grade),
                 label: 'Grade',
                 borderColor: '#3cba9f',
-                backgroundColor: '#71d1bd',
+                backgroundColor: '#3cba9f',
                 fill: false,
               }, { 
                 data: grades.map(g => g && g.max),
                 label: 'Max',
                 borderColor: '#3e95cd',
-                backgroundColor: '#7bb6dd',
+                backgroundColor: '#3e95cd',
+                fill: false,
+              }, { 
+                data: grades.map(g => g && 100 * g.grade / g.max),
+                label: '%',
+                borderColor: '#fc6290',
+                backgroundColor: '#fc6290',
                 fill: false,
               }]
         }});
